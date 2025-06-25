@@ -19,21 +19,21 @@ export const TodoList = () => {
     };
 
     return (
-        <div className="container mt-5" style={{ maxWidth: "600px" }}>
-            <h1 className="text-center">To-Do List</h1>
+        <div className="container bg-secondary-subtle shadow rounded-4 mt-5">
+            <h1 className="text-center pt-2">To-Do List</h1>
 
             <input
                 type="text"
-                className="form-control"
-                placeholder="To add a new task, type it here then press Enter"
+                className="form-control text-center"
+                placeholder="Type task here and press Enter"
                 value={input}
                 onChange={(newTaskEvent) => setInput(newTaskEvent.target.value)}
                 onKeyDown={taskAddKey}
             />
 
-            <ul className="list-group shadow mt-3">
+            <ul className="list-group shadow mt-3 mb-2">
                 {tasks.length === 0 ? (
-                    <li className="list-group-item text-muted"> No pending tasks. You're all caught up! </li>
+                    <li className="list-group-item text-muted text-center"> No pending tasks. You're all caught up! </li>
                 ) : (
                     tasks.map((task, i) => (
                         <li key={i} className="list-group-item d-flex justify-content-between">
@@ -45,7 +45,7 @@ export const TodoList = () => {
             </ul>
 
             {tasks.length > 0 && (
-                <div className="text-muted mt-2">
+                <div className="text-muted px-1">
                     {tasks.length} {tasks.length === 1 ? "item" : "items"} left
                 </div>
             )}
