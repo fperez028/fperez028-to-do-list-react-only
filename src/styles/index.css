@@ -13,3 +13,19 @@
 .list-group-item:hover .delete-btn {
     visibility: visible;
 }
+
+input[type="checkbox"] {
+    background-color: white;
+    border: 2px solid gray;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+    border-color: green;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}

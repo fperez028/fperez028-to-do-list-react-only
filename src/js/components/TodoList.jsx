@@ -35,7 +35,8 @@ export const TodoList = () => {
                 ) : (
                     tasks.map((task, index) => (
                         <li key={index} className="list-group-item d-flex justify-content-between">
-                            {task}
+                            <input type="checkbox" className="form-check-input"/>
+                            <span>{task}</span>
                             <span className="text-danger fw-bold delete-btn" onClick={() => deleteTask(index)}> x </span>
                         </li>
                     ))
