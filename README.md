@@ -14,3 +14,5 @@ Features & Functionality<br>
     - "item" vs "items" will change for 1 task vs multiple tasks
 - Tasks can be removed from the list using the red x on the given task line
     - red x is hidden until the pointer hovers over a given line
+- Checkbox allows marking of task as "complete" while maintaining the line on the list
+    - custom css styling with green checkbox to further signify a "done" status
