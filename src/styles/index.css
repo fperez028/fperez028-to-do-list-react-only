@@ -2,7 +2,8 @@
     border-style: solid;
     border-color: black;
     max-width: 500px;
-    margin: auto;
+    width: calc(100% - 40px);
+    margin-inline: auto;
 }
 
 .delete-btn {
