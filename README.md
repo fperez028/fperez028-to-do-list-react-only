@@ -16,3 +16,6 @@ Features & Functionality<br>
     - red x is hidden until the pointer hovers over a given line
 - Checkbox allows marking of task as "complete" while maintaining the line on the list
     - custom css styling with green checkbox to further signify a "done" status
+- When a task is checked as "complete" the completed counter will increment
+    - if a task is unchecked, completed counter will decrement
+    - if a task is removed while checked, completed counter will decrement
